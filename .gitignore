@@ -1,0 +1,69 @@
+# Local configuration and recordings
+config.json
+sessions/
+
+# Local analysis runs and source-only release archives
+outputs/
+release_packages/
+experiments/
+local_archive/
+.claude/
+.agents/
+
+# Local diagnostics and planning notes
+diag_*.txt
+D_DRIVE_CLEANUP_RECOMMENDATION.md
+
+# Internal agent instructions and machine-local notes
+AGENTS.md
+
+# Generated packages and binaries
+*.zip
+*.exe
+*.msi
+dist/
+build/
+
+# The manual review server loads these checked-in static assets directly.
+!tools/manual_frame_review_web/dist/
+!tools/manual_frame_review_web/dist/**
+
+# Generated analysis/export artifacts
+analysis_output/
+**/analysis_output/
+*.mp4
+*.jsonl
+*.log
+mouse_summary.json
+mouse_summary.xlsx
+mouse_analysis.xlsx
+mouse_behavior_report.xlsx
+click_heatmap*.png
+activity_timeline.png
+click_scatter.png
+drag_durations.png
+
+# Local UI verification and session-derived screenshots
+design_mockups/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.runtime/
+tools/tessdata/
+**/node_modules/
+.pnpm-store/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
